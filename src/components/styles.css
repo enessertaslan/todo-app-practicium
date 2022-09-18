@@ -1,0 +1,114 @@
+.todo-login{
+    width: 100%;
+}
+.todo-login form{
+    font-size: 1.5rem;
+}
+.todo-login form input[type=text]{
+    height:30px;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+}
+.todo-login form input[type=text]:focus{
+    border: none;
+    background-color: aqua;
+}
+.todo-container{
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    margin-top:2%;
+}
+.todo-container form{
+    display: flex;
+    justify-content: center;
+}
+.todo-container form input{
+    width: 100%;
+    height: 50px;
+    font-size: 50px;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid;
+
+}
+.todo-container form input:disabled{
+    background-color: whitesmoke;
+}
+.todos{
+    width: 100%;
+    height: 70px;
+    line-height: 2;
+    font-size: 2rem;
+    background-color: #5047d3b4;
+    border-bottom: 1px solid;
+    display: flex;
+    justify-content: space-between;
+    padding-left:0.1rem;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    cursor: pointer;
+}
+.todos-completed{
+    background-color: #5047d36c;
+}
+.todos-completed span{
+    text-decoration: line-through;
+}
+.todos:hover{
+    border: 1px solid rgb(54, 149, 212);
+    background-color: #5f4fecb4;
+        
+}
+.todos span{
+    margin-left: 10px;
+}
+.todos-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+.todos-delete{
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    width: 50px;
+    margin-right: 5px;
+    
+}
+
+/*Animations*/
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    }
+    @-webkit-keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    }
+    @keyframes fadeInUp {
+    0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    }
+    100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+    }
+    } 
